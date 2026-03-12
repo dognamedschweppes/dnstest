@@ -37,20 +37,23 @@ next:null
 
 };
 
-let page = location.pathname.replace("/","");
+let page = location.pathname.split("/").pop();
 
-if(page=="") page="00001";
+if(page === "") page = "00001";
 
 let data = story[page];
 
-document.getElementById("title").innerText=data.title;
-document.getElementById("panel").src=data.img;
-document.getElementById("text").innerText=data.text;
-
-if(data.next){
-document.getElementById("next").href="/"+data.next;
-}else{
-document.getElementById("next").style.display="none";
-
+if(!data){
+page = "00001";
+data = story[page];
 }
 
+document.getElementById("title").innerText = data.title;
+document.getElementById("panel").src = data.img;
+document.getElementById("text").innerText = data.text;
+
+if(data.next){
+document.getElementById("next").href = data.next;
+}else{
+document.getElementById("next").style.display="none";
+}
