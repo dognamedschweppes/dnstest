@@ -21,7 +21,7 @@ text:"Something happens.",
 next:"00004"
 },
 
-"000004":{
+"00004":{
 title:"Fourth page",
 img:"https://file.garden/ZZrJCnMkSSUP2GKj/00004.gif",
 text:"More story.",
@@ -51,4 +51,5 @@ if(data.next){
 document.getElementById("next").href="/"+data.next;
 }else{
 document.getElementById("next").style.display="none";
+
 }
