@@ -2,29 +2,57 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <title>Test Adventure</title>
 
 <style>
 
 body{
-    background:black;
-    color:white;
-    font-family: Verdana;
-    text-align:center;
+background:#535353;
+font-family: Verdana, Arial;
+margin:0;
 }
 
-img{
-    max-width:700px;
+.page{
+width:650px;
+margin:auto;
+background:white;
+padding:20px;
+margin-top:20px;
+}
+
+.title{
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.panel{
+text-align:center;
+margin:20px 0;
+}
+
+.panel img{
+max-width:100%;
+}
+
+.text{
+font-size:14px;
+line-height:1.4;
+margin-bottom:20px;
 }
 
 .next{
-    margin-top:20px;
-    font-size:24px;
+font-weight:bold;
+font-size:16px;
 }
 
-a{
-    color:#00ff00;
-    text-decoration:none;
+.next a{
+text-decoration:none;
+color:#0000ff;
+}
+
+.next a:hover{
+text-decoration:underline;
 }
 
 </style>
@@ -33,17 +61,23 @@ a{
 
 <body>
 
-<h2 id="title"></h2>
+<div class="page">
 
+<div class="title" id="title"></div>
+
+<div class="panel">
 <img id="panel">
+</div>
 
-<div id="text"></div>
+<div class="text" id="text"></div>
 
 <div class="next">
 <a id="next">==></a>
 </div>
 
-<script src="story.js"></script>
+</div>
+
+<script src="/dnstest/story.js"></script>
 
 </body>
 </html>
