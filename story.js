@@ -23,14 +23,14 @@ next:"00004"
 
 "00004":{
 title:"Fourth page",
-img:"https://file.garden/ZZrJCnMkSSUP2GKj/00004.gif",
+img:"https://file.garden/ZZrJCnMkSSUP2GKj/00004.png",
 text:"More story.",
 next:"00005"
 },
 
 "00005":{
 title:"Fifth page",
-img:"https://file.garden/ZZrJCnMkSSUP2GKj/00005.gif",
+img:"https://file.garden/ZZrJCnMkSSUP2GKj/00005.png",
 text:"End of test.",
 next:null
 }
@@ -53,3 +53,4 @@ document.getElementById("next").href="/"+data.next;
 document.getElementById("next").style.display="none";
 
 }
+
