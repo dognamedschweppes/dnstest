@@ -41,6 +41,13 @@ let page = location.pathname.split("/").pop();
 
 if(page === "") page = "00001";
 
+// если это не номер страницы — ничего не делать
+if(!/^\d+$/.test(page)){
+    document.body.innerHTML = "Page not found";
+    throw new Error("Not a comic page");
+}
+
+
 let data = story[page];
 
 if(!data){
